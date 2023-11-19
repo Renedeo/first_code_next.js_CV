@@ -1,10 +1,9 @@
 "use client";  // Ajout de cette ligne pour activer le mode strict
 import * as React from "react";
 import Stack from "@mui/material/Stack";
-import { Link, Text } from "@chakra-ui/react";
+import { Link, Image } from "@chakra-ui/react";
 import { StyledEngineProvider } from "@mui/material/styles";
 import TimelineContentItems from "./component/timelineContent";
-import { Image } from "@chakra-ui/react";
 import Divider from "@mui/material/Divider";
 import ContentItem from "./component/contentItem";
 import Box from "@mui/material/Box";
@@ -12,8 +11,8 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import { ContactMail, Description, LinkedIn, LocalPhone } from "@mui/icons-material";
-import { Avatar, Chip, LinearProgress, Typography } from "@mui/material";
+import { ContactMail, LinkedIn, LocalPhone } from "@mui/icons-material";
+import { Avatar, Typography} from "@mui/material";
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import LinguisticSkills from "./component/linguistic";
 

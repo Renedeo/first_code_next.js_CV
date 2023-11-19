@@ -39,44 +39,38 @@ const mapLevelToColor = (level: string) => {
             return "#9E9E9E"; // Gray
     }
 };
-
 const LinguisticSkills = () => {
     return (
-        <Stack>
-            {/* <Divider textAlign="left" sx={{ marginTop: "20px" }}> */}
-            {/* </Divider> */}
-            <List>
-                {linguisticSkills.map((skill, index) => (
-                    <ListItem key={index}>
-                        <ListItemText
-                            primary={
-                                <Stack direction="row" justifyContent="space-between">
-                                    <Typography
-                                        fontSize="15px"
-                                    >
-                                        {skill.language}
-                                    </Typography>
-                                    <Typography
-                                        fontSize="10px"
-                                        style={{ color: mapLevelToColor(Object.keys(skill.level)[0]) }}
-                                    >
-                                        {Object.keys(skill.level)[0]}
-                                    </Typography>
-                                </Stack>
-                            }
-                            secondary={
-                                <LinearProgress
-                                    variant="determinate"
-                                    value={skill.level[Object.keys(skill.level)[0]]}
-                                    sx={{ width: "100%", marginTop: "8px" }}
-                                />
-                            }
-                        />
-                    </ListItem>
-                ))}
-            </List>
-        </Stack>
+      <Stack>
+        <List>
+          {linguisticSkills.map((skill, index) => (
+            <ListItem key={index}>
+              <ListItemText
+                primary={
+                  <Stack direction="row" justifyContent="space-between">
+                    <Typography fontSize="15px">{skill.language}</Typography>
+                    <Typography
+                      fontSize="10px"
+                      style={{ color: mapLevelToColor(Object.keys(skill.level)[0]) }}
+                    >
+                      {Object.keys(skill.level)[0]}
+                    </Typography>
+                  </Stack>
+                }
+                secondary={
+                  <LinearProgress
+                    variant="determinate"
+                    value={Object.values(skill.level)[0]} // Extracting the value directly
+                    sx={{ width: "100%", marginTop: "8px" }}
+                  />
+                }
+              />
+            </ListItem>
+          ))}
+        </List>
+      </Stack>
     );
-};
+  };
+  
 
 export default LinguisticSkills;

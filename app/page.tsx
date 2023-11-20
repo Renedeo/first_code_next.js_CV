@@ -105,15 +105,15 @@ const content_exp: ContentItem[] = [
 
 const img_comp = [
   {
-    path_name: "/image/css.png",
+    path_name: "./image/css.png",
     cv_name: "CSS",
   },
   {
-    path_name: "/image/html.png",
+    path_name: "./image/html.png",
     cv_name: "HTML",
   },
   {
-    path_name: "/image/js.png",
+    path_name: "./image/js.png",
     cv_name: "JavaScript",
   },
   {
@@ -121,7 +121,7 @@ const img_comp = [
     cv_name: "PHP",
   },
   {
-    path_name: "/image/Py.png",
+    path_name: "./image/Py.png",
     cv_name: "Python",
   },
 ];
@@ -175,7 +175,7 @@ export default function Home() {
             <Image
               borderRadius="full"
               boxSize="200px"
-              src="/image/Photo_identité.JPG"
+              src="./image/Photo_identité.JPG"
               alt="Photo d'identité"
             />
             <Divider orientation="vertical" />

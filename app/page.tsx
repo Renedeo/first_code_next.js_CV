@@ -167,8 +167,7 @@ export default function Home() {
   });
 
   return (
-    <>
-      <Stack direction="column">
+    <Stack direction="column">
         <Stack direction="row" spacing={3}>
 
           <Stack direction="row" alignItems="center" width="700px" spacing={2}>
@@ -309,6 +308,5 @@ export default function Home() {
           </Stack>
         </Stack>
       </Stack>
-    </>
-  );
+    )
 }
